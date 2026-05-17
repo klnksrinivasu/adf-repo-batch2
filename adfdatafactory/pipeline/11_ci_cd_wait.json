@@ -1,0 +1,17 @@
+{
+	"name": "11_ci_cd_wait",
+	"properties": {
+		"activities": [
+			{
+				"name": "11_pipeline_wait",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"annotations": []
+	}
+}
