@@ -1,0 +1,15 @@
+{
+	"name": "b2datafactory20aprila",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "28cb6133-0e4e-4814-991f-028117c92991",
+		"tenantId": "e351df25-55c5-48d7-910f-5337c98f8762"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "6mysqltable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MySql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`dim_product`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,72 @@
+{
+	"name": "4_adepipeline_prodready",
+	"properties": {
+		"activities": [
+			{
+				"name": "executecopypipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "2_ADE_PipelineCopyFIle",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "executegithubpipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "executecopypipeline",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "1_ADE_copyGithub",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "executetransformationpipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "executegithubpipeline",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "3_ADE_pipeline_salescopy",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-05-10T08:47:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

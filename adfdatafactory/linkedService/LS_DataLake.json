@@ -1,0 +1,12 @@
+{
+	"name": "LS_DataLake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://b2datalake20aprila.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJGNUI5NjA4LUE4MDMtNDZERC1BOUZCLUY2OTYyQjNCMUQwQl81OGI2YzVlNS04MzFjLTQ1ZjYtYmZkZi1jOGZkMjVkNDI4YWIiDQp9"
+		}
+	}
+}
