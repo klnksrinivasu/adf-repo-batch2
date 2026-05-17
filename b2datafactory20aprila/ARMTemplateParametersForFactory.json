@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "b2datafactory20aprila"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LS_AWS_S3_secretAccessKey": {
+			"value": ""
+		},
+		"LS_DataLake_accountKey": {
+			"value": ""
+		},
+		"MySql1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://b2datalake20aprila.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "adeazuresql.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "sqldatabaseserverapril"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sqldatabaseservermarch"
+		},
+		"LS_AWS_S3_properties_typeProperties_accessKeyId": {
+			"value": "AKIASG23AUDKGVJ3E6IH"
+		},
+		"LS_DataLake_properties_typeProperties_url": {
+			"value": "https://b2datalake20aprila.dfs.core.windows.net/"
+		},
+		"LS_Github_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"MySql1_properties_typeProperties_server": {
+			"value": "127.0.0.1"
+		},
+		"MySql1_properties_typeProperties_database": {
+			"value": "adesql"
+		},
+		"MySql1_properties_typeProperties_username": {
+			"value": "root"
+		},
+		"event_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/0d275683-9d57-4d40-a3f4-dd16ee50f82c/resourceGroups/B2-RG-CI/providers/Microsoft.Storage/storageAccounts/b2datalake20aprila"
+		}
+	}
+}
